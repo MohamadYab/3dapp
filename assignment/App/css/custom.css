@@ -1,0 +1,438 @@
+/* Method to declare your own fonts */
+@font-face {
+    font-family: cocaColaFont;
+    src: url(../assets/fonts/loki_cola/LOKICOLA.TTF);
+}
+
+/* Extra small devices (portrait phones, less than 576px)
+   No media query since this is the default in Bootstrap
+*/
+body {
+    background-image: url(../assets/images/site_images/bg_coke.jpg);
+    background-repeat: repeat-y;
+}
+
+#interaction {
+    margin-left: unset;
+    margin-right: unset;
+}
+
+.main_contents {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Some simple CSS rules for styling p, h1 to h6, etc. in the main contents container */
+p {
+    color: white;
+    font-family: 'OpenSans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* CSS rules for the main_text IDs */
+#main_3d_image {
+    background-image: url(../assets/images/site_images/main_3D_538.jpg);
+    background-repeat: no-repeat;
+    height: 200px;
+}
+#main_text {
+    float: left;
+    margin: 5%;
+    width: 90%;
+    display: block;
+    background-color: rgba(255,255,255,0.8);
+    padding: 10px;
+    border-radius: 5px;
+}
+#main_text h2 {
+    color: rgba(0,102,153,1);
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+#main_text h3 {
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#main_text p {
+    font-size: 12px;
+    margin: 0px;
+    line-height: 1.2;
+} 
+
+.card {
+    border: 1px solid rgba(0,0,0,.125);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(245, 189, 147, .7);
+ }
+
+ .card-text {
+    font-size: 13px;
+ }
+
+ /* CSS rule to style the mobile logo */
+.logo {
+margin-top: 3px;
+}
+    
+.logo h1 {
+font-family: cocaColaFont; /* You don't need to repeat this for each media query as it is propagated */
+font-size: 31px;
+margin: 0;
+margin-top: -10px;
+margin-bottom: -15px;
+float: left;
+padding-top: 0px;
+padding-left: 0px;
+padding-right: 2px;
+}
+    
+.logo h2 {
+font-family: cocaColaFont;
+font-size: 31px;
+margin-top: -6px;
+margin-bottom: -15px;
+padding-top: 0px;
+padding-left: 0px;
+padding-right: 3px;
+float: left;
+}
+    
+.logo h3 {
+font-size: 18px;
+margin-top: 0px;
+margin-bottom: -5px;
+padding-top: 0px;
+padding-left: 0px;
+float: left;
+}
+    
+.logo p {
+font-size: 7px; /* You may have to tweak this to get a good fit */
+margin-top: 22px; /* You may have to tweak this to get a good fit */
+margin-bottom: 0px;
+padding-top: 0px;
+padding-left: 3px;
+}
+
+/* New CSS rules to better position the navbar and increase its height, Bootstrap defaults tend to make your site look like a Bootstrap clone! 
+*/
+
+/* CSS rule to overwrite the navbar background and border color — again, helps to stop your site looking like a Bootstrap clone! 
+*/
+.navbar_coca_cola {
+    background-color: #f40009; /* Set navbar background color */
+    border-width: 0px;
+    min-height: 70px;
+}
+
+/* CSS rule to overwrite the navbar-brand font color
+*/
+.navbar-brand {
+    white-space: unset !important ;
+}
+
+.navbar_coca_cola .navbar-brand {
+    color: white;
+}
+        
+/* CSS rule to overwrite the navbar-brand font hover color
+*/
+.navbar_coca_cola .navbar-brand:hover {
+    color: black;
+}
+
+/* CSS rule to overwrite the bootstrap.css rules for setting the active font color and background colour
+*/
+.navbar_coca_cola .navbar-nav .nav-item > .active {
+    background-color: #3399ff; /* Blue color for background */
+}
+
+/* A set of CSS rules to change the Bootstrap defaults for the menu link text color, hover, background, focus
+*/
+.nav-link {
+    color: white !important;
+}
+
+/* These next two CSS rules control the style of the icon bar */
+.navbar_coca_cola .navbar-toggler {
+    border-color: white;
+}
+
+.navbar_coca_cola  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1.0)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar_coca_cola .navbar-toggler {
+    outline: none !important;
+}
+
+/* CSS rule to style the footer */
+.footer {
+    color: #030303;
+    background-color: #f40009; /* Set navbar footer background color same as header */
+    height: 50px;
+}
+
+.github {
+    font-size: 14px;
+    text-decoration: underline;
+    color: white;
+    cursor: pointer;
+}
+
+.navbar-text > p {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.copyright {
+    padding-top: 8px;
+    width: 60%;
+}
+
+/* Thumbnails */
+.img-thumbnail {
+    padding: 0.25rem;
+    margin-top: 5px;
+    background-color: transparent;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    max-width: 100%;
+    height: auto;
+}
+
+.btn {
+    margin: 4px;
+}
+
+.btn-group {
+    display: block;
+}
+
+/* Camera Buttons */
+.camera-btns {
+    /* background-color: rgba(0, 0, 255, 0.3);  */
+    border-color: black; 
+    border-style: solid;
+    border-width: 0px;
+    margin-top: 0px;
+    padding: 0px;
+}
+.camera-btns > p  {
+    font-size: 15px;
+    color: red;
+    padding-left: 0px;
+    font-weight: 900; 
+}
+
+.btn-responsive {
+    padding: 6px 10px;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    white-space: normal !important;
+}
+
+/* Gellery and Model Stuff */
+.model3D  {
+    background-color: rgba(255, 255, 255, 0.2); 
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 1.0);
+    padding: 2px;
+    height: 200px;
+}
+X3D, x3d {
+    float: left;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 0, 0, 1.0);
+    width: 100%;
+    height: 100%
+}
+
+/* Small devices (landscape phones, 576px and up)
+*/
+@media (min-width: 576px) {
+
+    #main_3d_image {
+        background-image: url(../assets/images/site_images/main_3D_768.jpg);
+        height: 288px;
+    }
+
+    #main_text {
+        float: right;
+        margin-top: 7%;
+    }
+
+    .card {
+        border: 0px solid rgba(0,0,0,.125);
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .navbar_coca_cola {
+        min-height: 90px;
+    }
+
+    /* CSS rule to style the footer */
+    .footer {
+        height: 60px;
+    }
+
+    .copyright {
+        padding-top: 16px;
+    }
+
+    .model3D  {
+        height: 400px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up)
+*/
+@media (min-width: 768px) { 
+
+    #main_3d_image {
+        background-image: url(../assets/images/site_images/main_3D_970.jpg);
+        height: 363px;
+    }
+
+    .card {
+        border: 0px solid rgba(0,0,0,.125);
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #main_text {
+        float: right;
+        margin-top: 7%;
+    }
+
+    #main_text h2 {
+        color: crimson;
+        font-size: 30px;
+    }
+    
+    #main_text h3 {
+        color: darkcyan;
+        font-size:22px;
+    }
+    
+    .logo {
+        margin-top: 3px;
+    }
+
+    .logo h1 {
+        font-size: 41px;
+        margin-top: 0px;
+    }
+
+    .logo h2 {
+        font-size: 43px;
+        margin-top: 5px;
+    }
+
+    .logo h3 {
+        font-size: 31px;
+        margin-top: 5px;
+        margin-bottom: 3px;
+    }
+
+    .logo p {
+        font-size: 10px;
+        margin-top: 45px;
+        padding-left: 8px;
+    }
+
+    /* CSS rule to style the footer */
+    .navbar-text > p {
+        font-size: 18px;
+    }
+
+    .copyright {
+        padding-top: 20px;
+    }
+
+    .model3D  {
+        height: 600px;
+    }
+}
+
+@media (min-width: 992px) { 
+
+    #main_3d_image {
+        background-image: url(../assets/images/site_images/main_3D_1400.jpg);
+        max-width: 100%;
+    }
+
+    #main_text {
+        margin-top: 20%;
+    }
+
+    .logo {
+        margin-top: 7px;
+    }
+
+    .logo h1 {
+        font-size: 59px;
+        margin-top: 0px;
+        margin-bottom: -20px;
+        padding-right: 0px;
+    }
+
+    .logo h2 {
+        font-size: 65px;
+        margin-top: 7px;
+        margin-bottom: -25px;
+        padding-right: 6px;
+    }
+
+    .logo h3 {
+        font-size: 40px;
+        margin-top: 15px;
+        margin-bottom: -5px;
+    }
+
+    .logo p {
+        font-size: 14px;
+        margin-top: 0px;
+        padding-top: 65px;
+        padding-left: 12px;
+    }
+
+    .navbar_coca_cola {
+        min-height: 120px;
+    }
+
+    /* CSS rule to style the footer */
+    .footer {
+        height: 75px;
+    }
+
+    .github {
+        font-size: 15px;
+    }
+
+    .copyright {
+        padding-top: 20px;
+    }
+
+    .model3D  {
+        height: 800px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up)
+*/
+@media (min-width: 1200px) {   
+    #main_3d_image {
+        background-image: url(../assets/images/site_images/main_3D_2048.jpg);
+        height: 700px;
+    }
+}
