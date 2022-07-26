@@ -1,17 +1,15 @@
 <!-- Home page block element -->
 <div id="home">
     <!-- Main Header -->
-    <div class="row">
-        <div class ="col-sm-12">
-            <!-- BG Image -->
-            <div id="main_3d_image">
-                <!-- Text -->
-                <div id="main_text" class="col-xs-12 col-sm-4">
-                    <h2 id="title_home">Coca Cola Great Britain</h2>
-                    <h3 id="subTitle_home">Founded by Dr John S Pemberton</h3>
-                    <p id="description_home">The Coca Cola Company is the world's leading manufacturer, marketer and distributor of non-alcoholic beverage concentrates and syrups, and produces nearly 400 brands.</p>
-                </div> 
-            </div> 
+    <div class="row custom-card">
+        <!-- BG Image -->
+        <div class ="col-md-5" >
+            <div id="main_3d_image" ></div>
+        </div>
+        <div class ="col-md-7" >
+            <h2 id="title_home">Coca Cola Great Britain</h2>
+            <h3 id="subTitle_home">Founded by Dr John S Pemberton</h3>
+            <p id="description_home">The Coca Cola Company is the world's leading manufacturer, marketer and distributor of non-alcoholic beverage concentrates and syrups, and produces nearly 400 brands.</p>
         </div>
     </div>
 

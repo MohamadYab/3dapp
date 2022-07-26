@@ -10,6 +10,7 @@
 body {
     background-image: url(../assets/images/site_images/bg_coke.jpg);
     background-repeat: repeat-y;
+    max-height: 100vh;
 }
 
 #interaction {
@@ -44,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 5%;
     width: 90%;
     display: block;
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgba(245, 189, 147, .9);
     padding: 10px;
     border-radius: 5px;
 }
@@ -65,18 +66,24 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.2;
 } 
 
-.card {
+.card, .custom-card{
     border: 1px solid rgba(0,0,0,.125);
     margin-top: 10px;
     margin-bottom: 10px;
-    background-color: rgba(245, 189, 147, .7);
- }
+    background-color: rgba(245, 189, 147, .9);
+}
 
- .card-text {
-    font-size: 13px;
- }
+.custom-card {
+    padding: 10px 0px;
+    width: 100%;
+    margin: 10px auto;
+}
 
- /* CSS rule to style the mobile logo */
+.card-text {
+font-size: 13px;
+}
+
+/* CSS rule to style the mobile logo */
 .logo {
 margin-top: 3px;
 }
@@ -142,16 +149,14 @@ padding-left: 3px;
     color: white;
 }
         
-/* CSS rule to overwrite the navbar-brand font hover color
-*/
-.navbar_coca_cola .navbar-brand:hover {
-    color: black;
-}
-
 /* CSS rule to overwrite the bootstrap.css rules for setting the active font color and background colour
 */
 .navbar_coca_cola .navbar-nav .nav-item > .active {
-    background-color: #3399ff; /* Blue color for background */
+    background-color: #3399ff;
+}
+
+.navbar-nav {
+    margin-left: auto;
 }
 
 /* A set of CSS rules to change the Bootstrap defaults for the menu link text color, hover, background, focus
@@ -196,6 +201,14 @@ padding-left: 3px;
 .copyright {
     padding-top: 8px;
     width: 60%;
+}
+
+.modal * {
+    color: black !important;
+}
+
+#about {
+    color: white;
 }
 
 /* Thumbnails */
@@ -256,6 +269,17 @@ X3D, x3d {
     height: 100%
 }
 
+/* Modals Fancy Box */
+.wrapper {
+    max-height: 100vh;
+    margin: 0;
+}
+
+/* CSS rule to overwrite the navbar-brand font hover color
+*/
+.navbar-brand:hover * {
+    color: black !important;
+}
 /* Small devices (landscape phones, 576px and up)
 */
 @media (min-width: 576px) {
@@ -433,6 +457,6 @@ X3D, x3d {
 @media (min-width: 1200px) {   
     #main_3d_image {
         background-image: url(../assets/images/site_images/main_3D_2048.jpg);
-        height: 700px;
+        height: 540px;
     }
 }

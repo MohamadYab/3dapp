@@ -19,7 +19,7 @@
                         Pepper
                     </button>
                     <button class="btn btn-success" onclick="updateScene('appletiser');">
-                        Pepper
+                        Appletiser
                     </button>
                 </div>
 
@@ -27,13 +27,18 @@
                 <div class="card-body">
                     <h2 class="card-title"><span id="model_brand">Coke</span> X3D Model</h2>
                     <div class="model3D">
-                        <x3d>
+                        <!-- <x3d>
                             <scene>
                                 <Switch whichChoice="0" id='switcher'>
-                                    <inline nameSpaceName="model" mapDEFToID="true" onclick="animateModel();" url="assets/x3d/coke.x3d" > </inline>
-                                    <inline nameSpaceName="model" mapDEFToID="true" onclick="animateModel();" url="assets/x3d/sprite.x3d"> </inline>
-                                    <inline nameSpaceName="model" mapDEFToID="true" onclick="animateModel();" url="assets/x3d/pepper_animation.x3d"> </inline>
+                                    <inline nameSpaceName="model" mapDEFToID="true" onclick="animateModel();" url="App/assets/x3d/coke.x3d" > </inline>
+                                    <inline nameSpaceName="model" mapDEFToID="true" onclick="animateModel();" url="App/assets/x3d/sprite.x3d"> </inline>
+                                    <inline nameSpaceName="model" mapDEFToID="true" onclick="animateModel();" url="App/assets/x3d/Peppertest.x3d"> </inline>
                                 </Switch>
+                            </scene>
+                        </x3d> -->
+                        <x3d id="model" >
+                            <scene>
+                                    <inline nameSpaceName="model" mapDEFToID="true" onclick="animateModel();" url="App/assets/x3d/testcam.x3d"> </inline>
                             </scene>
                         </x3d>
                     </div> 

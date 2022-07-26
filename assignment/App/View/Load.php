@@ -10,7 +10,7 @@ class Load {
 		}
 
 		// Cincatemat the view file with .php extension to include the view as a php file
-		include $file_name . '.php';
+		include 'App/View/' . $file_name . '.php';
 	}
 
 

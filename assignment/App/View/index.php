@@ -5,9 +5,6 @@
      <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="App/css/bootstrap.css">
-
     <!-- X3dom -->
     <link rel='stylesheet' type='text/css' href='App/css/x3dom.css'>
 
@@ -20,6 +17,9 @@
 
     <!-- Use a light box to view images in the gallery -->
     <link rel="stylesheet" type="text/css" href="App/css/jquery.fancybox.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="App/css/bootstrap.css">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="App/css/custom.css">
@@ -36,7 +36,6 @@
 
     <?php 
     include 'Pages/Home.php';
-    include 'Pages/About.php';
     include 'Pages/Models.php';
     ?>
     
