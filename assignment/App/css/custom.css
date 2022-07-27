@@ -207,8 +207,10 @@ padding-left: 3px;
     color: black !important;
 }
 
-#about {
-    color: white;
+/* MODEL PAGE */
+#models {
+    max-width: 942px;
+    margin: 0px auto;
 }
 
 /* Thumbnails */
@@ -267,6 +269,18 @@ X3D, x3d {
     border: 1px solid rgba(255, 0, 0, 1.0);
     width: 100%;
     height: 100%
+}
+
+/* gallery-img */
+.gallery-img {
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    margin: 12px;
+}
+
+.gallery .row {
+margin: 0px;
 }
 
 /* Modals Fancy Box */
@@ -445,10 +459,6 @@ X3D, x3d {
 
     .copyright {
         padding-top: 20px;
-    }
-
-    .model3D  {
-        height: 800px;
     }
 }
 

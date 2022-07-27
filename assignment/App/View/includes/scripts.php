@@ -27,8 +27,8 @@
 <!-- Also, intialises popovers-->
 <script src="App/js/custom.js" crossorigin="anonymous"></script>
 
-<!-- Control Models Page -->
-<script src="App/js/controlModelInfo.js"></script>
-
 <!-- JQuery code to get content data from a backend JSON file -->
 <script src="App/js/getJsonData.js"></script>
+
+<!-- Control Models Page -->
+<script src="App/js/controlModelInfo.js"></script>

@@ -47,30 +47,9 @@
             </div>
         </div>
 
-        <!-- 2) 3D image gallery -->
+        <!-- 3D Model Controls -->
         <div class="col-sm-4 col-md-3">
-
-                <div class="card text-left">
-                <!-- Gallery Header Title -->
-                <div class="card-header gallery-header">
-                    <p class="title_gallery drinksText" >3D Images Gallery</p>
-                </div>
-
-                <div class="card-body gallery-body">
-                    <!-- Gallery images -->
-                    <!-- I need to use the image generator to generate images here. -->
-                    <div class="gallery" id="gallery"></div>
-                </div>
-            </div> <!-- End gallery card -->
-        </div> <!-- End gallery column -->
-
-    </div> <!-- End of first row -->
-
-    <!-- Start of second row -->
-    <div id="interaction" class="row">
-
-        <!-- CAMERA CONTROLS Column-->
-        <div class="col-sm-4">
+            <!-- CAMERA CONTROLS Column-->
             <div class="card text-left">
                 <div class="card-header">
                     <p>Camera Angle</p>
@@ -86,11 +65,9 @@
                     </div>
                     <p>These buttons control the camera view angle.</p>
                 </div>
-            </div>
-        </div> <!-- End of CAMERA CONTROLS Column-->
+            </div> <!-- End of CAMERA CONTROLS Column-->
 
-        <!-- Animation CONTROLS Column-->
-        <div class="col-sm-4">
+            <!-- Animation CONTROLS Column-->
             <div class="card text-left">
                 <div class="card-header">
                     <p>Animation Angle</p>
@@ -102,11 +79,9 @@
                     </div>
                     <p>These buttons control the model's animation.</p>
                 </div>
-            </div>
-        </div> <!-- End of Animation CONTROLS Column-->
+            </div> <!-- End of Animation CONTROLS Column-->
 
-        <!-- Render CONTROLS Column-->
-        <div class="col-sm-4">
+            <!-- Render CONTROLS Column-->
             <div class="card text-left">
                 <div class="card-header">
                     <p>Light & Wireframe</p>
@@ -118,19 +93,33 @@
                     </div>
                     <p>These buttons control the light & wireframe.</p>
                 </div>
-            </div>
-        </div> <!-- End of Render CONTROLS Column-->
+            </div> <!-- End of Render CONTROLS Column-->
+        </div> <!-- End of CONTROLS Column -->
+    </div> <!-- End of first row -->
 
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="card">
-                    <div class="card-body">
-                        <h2 id="brand" class="card-title drinksText">Coca Cola</h2>
-                        <h3 id="founded" class="card-subtitle drinksText">New York Harbour, 1886</h3>
-                        <p id="description" class="card-text drinksText">It was 1886, John Pemberton, an Atlanta pharmacist, was inspired by simple curiosity. One afternoon, he stirred up a fragrant, caramel-coloured liquid and, when it was done, the mixture was combined with carbonated water and sampled by customers who all agreed - this new drink was something special!</p> 
-                    </div>
+    <!-- 2) Info Row -->
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="card">
+                <div class="card-body">
+                    <h2 id="brand" class="card-title drinksText">Coca Cola</h2>
+                    <h3 id="founded" class="card-subtitle drinksText">New York Harbour, 1886</h3>
+                    <p id="description" class="card-text drinksText">It was 1886, John Pemberton, an Atlanta pharmacist, was inspired by simple curiosity. One afternoon, he stirred up a fragrant, caramel-coloured liquid and, when it was done, the mixture was combined with carbonated water and sampled by customers who all agreed - this new drink was something special!</p> 
                 </div>
             </div>
         </div>
+    </div>
+
+    <!-- Start of second row -->
+    <div id="interaction" class="row">
+        <!-- 2) 3D image gallery -->
+        <div class="custom-card">
+            <!-- Gallery Header Title -->
+            <div class="card-header gallery-header">
+                <p class="title_gallery drinksText" >3D Images Gallery</p>
+            </div>
+
+            <div class="gallery" id="gallery"></div>
+        </div> <!-- End gallery column -->
     </div>
 </div> <!-- End of models page -->
