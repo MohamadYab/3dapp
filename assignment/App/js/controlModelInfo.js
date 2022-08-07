@@ -30,7 +30,7 @@ function changeBrand(brand) {
 }
 
 function changeSwithcer(nodeId) {
-    // document.getElementById("switcher").setAttribute("whichChoice", nodeId);
+    document.getElementById("switcher").setAttribute("whichChoice", nodeId);
 }
 
 function changeDescription(index) {

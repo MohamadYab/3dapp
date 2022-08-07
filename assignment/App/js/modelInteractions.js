@@ -1,25 +1,19 @@
 //adapted from example code 'benskitchen.com'
-
 var spinning = false;
-
-function spin()
-{
-	spinning = !spinning;
-	document.getElementById('model__RotationTimer').setAttribute('enabled', spinning.toString());
-}
-
 function stopRotation()
 {
 	spinning = false;
 	document.getElementById('model__RotationTimer').setAttribute('enabled', spinning.toString());
+	document.getElementById('model__RotationTimer1').setAttribute('enabled', spinning.toString());
+	document.getElementById('model__RotationTimer2').setAttribute('enabled', spinning.toString());
 }
 
 function animateModel()
 {
-    if(document.getElementById('model__RotationTimer').getAttribute('enabled')!= 'true')
-        document.getElementById('model__RotationTimer').setAttribute('enabled', 'true');
-    else
-        document.getElementById('model__RotationTimer').setAttribute('enabled', 'false');
+	spinning = !spinning;
+	document.getElementById('model__RotationTimer').setAttribute('enabled', spinning.toString());
+	document.getElementById('model__RotationTimer1').setAttribute('enabled', spinning.toString());
+	document.getElementById('model__RotationTimer2').setAttribute('enabled', spinning.toString());
 }
 
 function wireframe()
@@ -35,6 +29,8 @@ function headlight()
 {
 	lightOn = !lightOn;
 	document.getElementById('model__headlight').setAttribute('headlight', lightOn.toString());
+	document.getElementById('model__headlight1').setAttribute('headlight', lightOn.toString());
+	document.getElementById('model__headlight2').setAttribute('headlight', lightOn.toString());
 }
 
 function cameraFront()

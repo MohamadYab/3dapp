@@ -29,16 +29,17 @@
                     <div class="model3D">
                         <!-- <x3d>
                             <scene>
-                                <Switch whichChoice="0" id='switcher'>
-                                    <inline nameSpaceName="model" mapDEFToID="true" onclick="animateModel();" url="App/assets/x3d/coke.x3d" > </inline>
-                                    <inline nameSpaceName="model" mapDEFToID="true" onclick="animateModel();" url="App/assets/x3d/sprite.x3d"> </inline>
-                                    <inline nameSpaceName="model" mapDEFToID="true" onclick="animateModel();" url="App/assets/x3d/Peppertest.x3d"> </inline>
-                                </Switch>
+                                    <inline nameSpaceName="model" mapDEFToID="true" onclick="animateModel();" url="App/assets/x3d/Coke.x3d"> </inline>
                             </scene>
+                            
                         </x3d> -->
                         <x3d id="model" >
                             <scene>
-                                    <inline nameSpaceName="model" mapDEFToID="true" onclick="animateModel();" url="App/assets/x3d/testcam.x3d"> </inline>
+                                <Switch whichChoice="0" id='switcher' render="true" visible="true" bboxcenter="0,0,0" bboxsize="-1,-1,-1">
+                                    <inline nameSpaceName="model" mapDEFToID="true" onclick="animateModel();" url="App/assets/x3d/coke.x3d" > </inline>
+                                    <inline nameSpaceName="model" mapDEFToID="true" onclick="animateModel();" url="App/assets/x3d/Sprite.x3d"> </inline>
+                                    <inline nameSpaceName="model" mapDEFToID="true" onclick="animateModel();" url="App/assets/x3d/Pepper.x3d"> </inline>
+                                </Switch>
                             </scene>
                         </x3d>
                     </div> 
@@ -74,7 +75,7 @@
                 </div>
                 <div class="card-body">
                     <div class="btn-group">
-                        <a href="#" class="btn btn-primary btn-responsive" onclick="spin();">Sping-X</a>
+                        <a href="#" class="btn btn-primary btn-responsive" onclick="animateModel();">Sping-X</a>
                         <a href="#" class="btn btn-danger btn-responsive" onclick="stopRotation();">Stop</a>
                     </div>
                     <p>These buttons control the model's animation.</p>

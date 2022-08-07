@@ -48,7 +48,7 @@
         <!-- Dr Pepper Column -->
         <div class="col-md-6 col-lg-3">
             <div class="card">
-                <a href="App/assets/images/render_images/pepper.jpg" data-fancybox data-caption="My 3D Pepper Cup Render" class="thumbnail">
+                <a href="App/assets/images/render_images/pepper.png" data-fancybox data-caption="My 3D Pepper Cup Render" class="thumbnail">
                     <img class="card-img-top img-fluid img-thumbnail" src="App/assets/images/site_images/dr_pepper.jpg" alt="Dr Pepper">
                 </a>
                 <div class="card-body">
